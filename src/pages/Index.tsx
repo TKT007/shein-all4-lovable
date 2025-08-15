@@ -19,8 +19,11 @@ const Index = () => {
   };
 
 const handleComplete = () => {
-  const finalUrl = addSourceToUrl("https://fb.track-conv.shop/visit/225f1f28-3a59-4b73-9317-8b3a16d2bc31");
- window.location.href = finalUrl;
+  if (typeof window !== 'undefined' && window.ttq) {
+    window.ttq.track('CompleteRegistration');
+  }
+  const finalUrl = addSourceToUrl("https://fb.track-conv.shop/visit/7661a9d6-6d83-4bf2-8491-7bba04a8c62a");
+  window.location.href = finalUrl;
 };
   
   const progress = currentStep === 0 ? 25 : currentStep === 1 ? 75 : 100;
@@ -31,12 +34,7 @@ const handleComplete = () => {
         <div className="w-full max-w-md">
           <div className="bg-card rounded-2xl shadow-lg p-8 space-y-8">
             {/* Title */}
-            <div className="text-center mb-4">
-              <h1 className="text-2xl font-bold text-card-foreground">
-                Back to School Rewards Program
-              </h1>
-            </div>
-
+           
             {/* Logo */}
             <div className="text-center">
               <RewardLogo className="mb-4" />
