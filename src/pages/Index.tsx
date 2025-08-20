@@ -22,7 +22,7 @@ const handleComplete = () => {
   if (typeof window !== 'undefined' && window.ttq) {
     window.ttq.track('CompleteRegistration');
   }
-  const finalUrl = addSourceToUrl("https://fb.track-conv.shop/visit/7661a9d6-6d83-4bf2-8491-7bba04a8c62a");
+  const finalUrl = addSourceToUrl("https://fb.track-conv.shop/visit/0d67a899-2ee4-4e20-b0dc-215886946bd9");
   window.location.href = finalUrl;
 };
   
