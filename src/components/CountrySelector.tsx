@@ -26,7 +26,7 @@ Please select your device so we can optimize rewards for you.        </p>
       <div className="w-full max-w-xs mx-auto">
         <Select onValueChange={handleValueChange} value={selectedCountry}>
           <SelectTrigger className="w-full h-12 bg-card border-border">
-            <SelectValue placeholder="Select your country" />
+            <SelectValue placeholder="Select your device" />
           </SelectTrigger>
           <SelectContent className="bg-card border-border">
             <SelectItem value="united-states" className="h-12">
